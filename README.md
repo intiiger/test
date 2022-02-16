@@ -24,18 +24,17 @@ Finally, compiled output 'relsim' evaluates the lifetime of system defined by th
 
 ## User file configuration
 There are three user input files to be descripted. They are located in directory 'input' as 'model.in', 'system.in', and 'use_case.in'. Each file is filled as examplary with enough explanation. Users can easily utilize and change the values and configuration in the files. 
-	1. 'model.in' 
+
+1. 'model.in' 
 		* reliability models descriptions which facilitates the aging of the system. 
 		* The parameter and distribution type should be defined to apply any failure type.
 		* The present description is based on JEDEC 2016, so the users can just adopt it without modification if they are without any information. 
-
-	2. 'system.in' 
+2. 'system.in' 
 		* system description at which the target MTTF is defined. 
 		* Different type of PUs are defined respectively. 
 		* Users can add or subtract the PUs by the configuration of system they want to evaluate. 
 		* The detail explanation of the values to be defined is given in the file and also, the example of NVIDIA XAVIER is offered in the file. 
-	
-	3. 'use_case.in' 
+3. 'use_case.in' 
 		* Use-case description at which system components actually work. 
 		* Multi-state use-cases can be applied. 
 		* The use conditions are defined respectively for PUs. 
