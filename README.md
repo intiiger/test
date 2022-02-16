@@ -7,9 +7,6 @@ Current release: private development in progress (Feb. 2022)
 RelSim is a software framework for evaluating the lifetime relablity of heterogeneous processors. Architectural heterogeneity has been advocated as a design strategy to enhance performance and energy efficiency. With various types of processing units (PUs) in a system, a workload is executed using multiple heterogeneous PUs. However, heterogeneous designs raise lifetime reliability concerns since different types of PUs have disparate roles and thus are irreplaceable. With diverse failure mechanisms and reliability distributions, it is a challenging problem to estimate system-level lifetime reliability of heterogeneous PUs that have different design specifications and undergo dissimilar stress conditions in various use-case situations. RelSim can be configured to model diverse designs of heterogeneous processors with various failure mechanisms, statistical distributions, and use-case conditions for lifetime reliability assessment. In addition, GPU acceleration is available to speed up in RelSim. 
 
 
-## calibration / evaluation 
-There are two steps in RelSim. First is 'calibration and the other one is 'evluation'. Calibration finds out the 
-
 ## Compile
 RelSim uses g++ and nvcc to compile C++ codes to execute on CPUs and GPUs. 
 Compiling with nvcc which is for both CPU and GPU codes are available with below commands. 
