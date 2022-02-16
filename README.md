@@ -53,7 +53,7 @@ To obtain the latest version of RelSim, use the following git command in a termi
 	$ git clone https://github.com/yonsei-icsl/RelSim
 
 ## Reference and Contact
-The related publication is under preparation, the brief infromation is below. 
+Below shows the brief information of the related publication which is under preparation. 
 
 	@article{jung_icsl2021,
     author    = {S. Jung and Y. Chon and J. Hwang and B. Kim and A. Trivedi and W. Song},
