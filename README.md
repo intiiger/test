@@ -13,9 +13,11 @@ There are two steps in RelSim. First is 'calibration and the other one is 'evlua
 ## Compile
 RelSim uses g++ and nvcc to compile C++ codes to execute on CPUs and GPUs. 
 Compiling with nvcc which is for both CPU and GPU codes are available with below commands. 
+
 	$ make or $ make gpu
 
 Or, if user's environment is with only CPU, below commands compiles with g++.
+
 	$ make cpu
 
 Finally, compiled output 'relsim' evaluates the lifetime of system defined by three inputs. 
@@ -23,12 +25,17 @@ Finally, compiled output 'relsim' evaluates the lifetime of system defined by th
 ## User file configuration
 There are three user input files to be descripted. They are located in directory 'input' as 'model.in', 'system.in', and 'use_case.in'. Each file is filled as examplary with enough explanation. Users can easily utilize and change the values and configuration in the files. 
 
-	* 'model.in' describes the failure types facilitating the aging of the system. The parameter and distribution type should be defined to apply any failure type.
+	* 'model.in' describes the failure types facilitating the aging of the system. 
+	The parameter and distribution type should be defined to apply any failure type.
 	The present description is based on JEDEC 2016, so the users can just adopt it without modification if they are without any information. 
 
-	* 'system.in' describes the system configuration to be evluated and at which the target MTTF is defined. Different type of PUs are defined respectively. Users can add or subtract the PUs by the configuration of system they want to evaluate. The detail explanation of the values to be defined is given in the file and also, the example of NVIDIA XAVIER is offered in the file. 
+	* 'system.in' describes the system configuration to be evluated and at which the target MTTF is defined. 
+	Different type of PUs are defined respectively. Users can add or subtract the PUs by the configuration of system they want to evaluate. 
+	The detail explanation of the values to be defined is given in the file and also, the example of NVIDIA XAVIER is offered in the file. 
 	
-	* 'use_case.in' describes the use conditions at which system components actually work. Multi-state use-cases can be applied. The use conditions are defined respectively for PUs. The detail explanation is offered in the file.
+	* 'use_case.in' describes the use conditions at which system components actually work. Multi-state use-cases can be applied. 
+	The use conditions are defined respectively for PUs. 
+	The detail explanation is offered in the file.
 
 Users can easily reconfigure the system architecture or change the use conditions to evaluate by modifying those input files without compiling relsim again. 
 
