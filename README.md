@@ -4,11 +4,12 @@ Intelligent Computing Systems Lab, Yonsei University\
 Current release: private development in progress (Feb. 2022)
 
 ## Introduction
-RelSim is a software framework for evaluating the lifetime relablity of heterogeneous processors. 
 Architectural heterogeneity has been advocated as a design strategy to enhance performance and energy efficiency. 
 With various types of processing units (PUs) in a system, a workload is executed using multiple heterogeneous PUs. 
 However, heterogeneous designs raise lifetime reliability concerns since different types of PUs have disparate roles and thus are irreplaceable. 
 With diverse failure mechanisms and reliability distributions, it is a challenging problem to estimate system-level lifetime reliability of heterogeneous PUs that have different design specifications and undergo dissimilar stress conditions in various use-case situations. 
+
+RelSim is a software framework for evaluating the lifetime relablity of heterogeneous processors coping with above problems.  
 RelSim can be configured to model diverse designs of heterogeneous processors with various mix of failure mechanisms (e.g., electromigration, gate oxide breakdown)  statistical distributions (e.g., lognormal, Weibull),  and use-defined execution scenarios for lifetime reliability assessment. 
 RelSim conducts a sizable set of Monte Carlo simulations to estimate the lifetime reliability of the heterogeneous system, and it engages graphics processing units (GPUs) to accelerate the compute-intensive statistical calculations. 
 The framework is also configurable to simulate a variety of dynamic reliability management (DRM) schemes such as replacement (e.g., spare components) and k-out-of-n (e.g., graceful degradation) models.
@@ -50,3 +51,15 @@ Users can easily reconfigure the system architecture or change the use condition
 To obtain the latest version of RelSim, use the following git command in a terminal.
 
 	$ git clone https://github.com/yonsei-icsl/RelSim
+
+## Reference and Contact
+The related publication is under preparation, the brief infromation is below. 
+
+	@article{jung_icsl2021,
+    author    = {S. Jung and Y. Chon and J. Hwang and B. Kim and A. Trivedi and W. Song},
+    title     = {{Computational Framework for Lifetime Reliability Assessment of Heterogeneous Computing Processors}},
+    journal   = {under review},
+    month     = {Feb.},
+    year      = {2022},
+	}
+
