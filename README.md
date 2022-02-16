@@ -24,7 +24,6 @@ Finally, compiled output 'relsim' evaluates the lifetime of system defined by th
 
 ## User file configuration
 There are three user input files to be descripted. They are located in directory 'input' as 'model.in', 'system.in', and 'use_case.in'. Each file is filled as examplary with enough explanation. Users can easily utilize and change the values and configuration in the files. 
-
 	1. 'model.in' 
 		* reliability models descriptions which facilitates the aging of the system. 
 		* The parameter and distribution type should be defined to apply any failure type.
